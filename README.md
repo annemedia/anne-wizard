@@ -47,7 +47,7 @@ xattr -dr com.apple.quarantine "Anne Wizard.app"
 Alternatively, you can bypass the quarantine by downloading the app via Terminal, like so:
 
 ```shell
-curl -L -o  anne-wizard-macos.zip https://github.com/annemedia/anne-wizard/releases/download/anne-wizard-v1.0/anne-wizard-macos.zip
+curl -L -o  anne-wizard-macos.zip https://github.com/annemedia/anne-wizard/releases/download/v1.0.0/anne-wizard-macos.zip
 ```
 
 #### Windows
@@ -56,13 +56,13 @@ Run the exe, and if you get a warning "Windows Defender SmartScreen prevented an
 Alternatively, you can avert the SmartScreen by downloading the app via PowerShell, like so:
 
 ```shell
-curl -o  anne-wizard-windows.zip https://github.com/annemedia/anne-wizard/releases/download/anne-wizard-v1.0/anne-wizard-windows.zip
+curl -o  anne-wizard-windows.zip https://github.com/annemedia/anne-wizard/releases/download/v1.0.0/anne-wizard-windows.zip
 ```
 
 or Command Prompt:
 
 ```shell
-curl -L -o  anne-wizard-windows.zip https://github.com/annemedia/anne-wizard/releases/download/anne-wizard-v1.0/anne-wizard-windows.zip
+curl -L -o  anne-wizard-windows.zip https://github.com/annemedia/anne-wizard/releases/download/v1.0.0/anne-wizard-windows.zip
 ```
 
 ### Important: Your Node Identity (Keys)
