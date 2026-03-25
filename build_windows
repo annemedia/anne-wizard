@@ -1,0 +1,48 @@
+
+## static windows builds in PowerShell
+# Download Qt source
+cd C:\Users\User\Documents
+curl -L -o qt-everywhere-src-6.10.1.zip https://download.qt.io/official_releases/qt/6.10/6.10.1/single/qt-everywhere-src-6.10.1.zip
+tar -xf qt-everywhere-src-6.10.1.zip
+cd qt-everywhere-src-6.10.1
+
+# QtDeclarative needs Python for some build steps. Install Python:
+# Download from https://www.python.org/downloads/
+# During installation, check "Add Python to PATH"
+# After installing, open a NEW PowerShell window and verify:
+# python --version
+# 1. Make sure Python is installed and in PATH
+
+# 2. Add MinGW to PATH
+$env:PATH = "C:\Qt\Tools\mingw1310_64\bin;$env:PATH"
+
+# 3. Clean the build directory (start fresh)
+cd C:\Users\User\Documents\qt-everywhere-src-6.10.1
+Remove-Item -Recurse -Force .\build -ErrorAction SilentlyContinue
+mkdir build
+cd build
+
+# 4. Run configure from the build directory
+..\configure.bat -static -release -platform win32-g++ -prefix C:\Qt\Static_6.10.1 -nomake examples -nomake tests -skip qt3d -skip qtactiveqt -skip qtcharts -skip qtconnectivity -skip qtdatavis3d -skip qtdoc -skip qtgamepad -skip qtgraphs -skip qtgrpc -skip qthttpserver -skip qtimageformats -skip qtlanguageserver -skip qtlocation -skip qtlottie -skip qtmqtt -skip qtmultimedia -skip qtnetworkauth -skip qtopcua -skip qtpositioning -skip qtquick3d -skip qtquick3dphysics -skip qtquickeffectmaker -skip qtquicktimeline -skip qtremoteobjects -skip qtscxml -skip qtsensors -skip qtserialbus -skip qtserialport -skip qtspeech -skip qtvirtualkeyboard -skip qtwayland -skip qtwebchannel -skip qtwebengine -skip qtwebsockets -skip qtwebview
+
+cd C:\Users\User\Documents\qt-everywhere-src-6.10.1
+
+# Now use the CMake command
+cmake --build . --parallel 3
+cmake --install . --prefix C:\Qt\Static_6.10.1
+
+$env:QT6_DIR = "C:\Qt\Static_6.10.1"
+
+
+cd C:\Users\User\Documents\ANNEWizard
+Remove-Item -Recurse -Force .\build-static -ErrorAction SilentlyContinue
+cmake -B build-static -G Ninja -DCMAKE_BUILD_TYPE=Release -DSTATIC_BUILD=ON -DQT6_DIR=C:/Qt/Static_6.10.1
+cmake --build build-static --parallel 3
+strip annewizard.exe
+
+
+Remove-Item -Recurse -Force .\build -ErrorAction SilentlyContinue
+cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DSTATIC_BUILD=OFF
+cmake --build build --parallel 3
+cd C:\Users\User\Documents\ANNEWizard\build
+C:\Qt\6.10.1\mingw_64\bin\windeployqt.exe annewizard.exe

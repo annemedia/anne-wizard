@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ANNE Wizard
+Comment=ANNE Network Node Setup Wizard
+Exec=@CMAKE_INSTALL_FULL_BINDIR@/annewizard
+Icon=annewizard
+Terminal=false
+Categories=Utility;System;
+StartupWMClass=ANNEWizard
+StartupNotify=true
+X-GNOME-FullName=ANNE Wizard
+GenericName=ANNE Network Node Setup Wizard
+Keywords=anne;network;node;setup;wizard;
+MimeType=

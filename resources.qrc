@@ -1,0 +1,19 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource prefix="/">
+    <file>assets/annelogo.png</file>
+    <file>assets/annewizard.ico</file>
+    <file>assets/annewizard.png</file>
+    <file>assets/annewizard.icns</file>
+    <file>assets/annode.png</file>
+    <file>assets/annode.ico</file>
+    <file>assets/annode.icns</file>
+    <file>assets/anneacc.js</file>
+    <file>assets/annehasher.icns</file>
+    <file>assets/annehasher.png</file>
+    <file>assets/anneminer.icns</file>
+    <file>assets/anneminer.png</file>
+    <file>assets/annehasher.ico</file>
+    <file>assets/anneminer.ico</file>
+  </qresource>
+</RCC>
