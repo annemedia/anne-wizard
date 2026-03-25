@@ -183,7 +183,9 @@ OTHER DEALINGS IN THE SOFTWARE.
 - Qt framework – [qt.io](https://www.qt.io)
 - linuxdeployqt – [linuxdeployqt](https://github.com/probonopd/linuxdeployqt)
 - appimagetool – [appimagetool](https://github.com/AppImage/appimagetool)
-- The ANNE community – [anne.media](https://anne.media)
+- ANNE Official – [anne.network](https://anne.network)
+- ANNE Media – [anne.media](https://anne.media)
+- The ANNE community – [annetalk.org](https://annetalk.org)
 
 <pre style="color: #000; background: whitesmoke; font-size: 34px; line-height: 1.2; font-weight: 800; text-align: center;">
       __/\__
