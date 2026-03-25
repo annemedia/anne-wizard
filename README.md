@@ -1,6 +1,6 @@
  <img width="80" height="80" src="https://8upload.com/image/e90a1dc58217981b/annewizard.png" alt="image">
  
-#  ANNE Wizard
+# ANNE Wizard: The Essential ANNE Installation Suite
 
 [![License](https://img.shields.io/badge/license-Unlicense-blue.svg)](LICENSE)  
 [![Qt6](https://img.shields.io/badge/Qt-6.10+-green.svg)](https://www.qt.io)  
