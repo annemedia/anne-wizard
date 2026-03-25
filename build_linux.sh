@@ -40,3 +40,4 @@ echo "Using qmake: $QT6_QMAKE"
 
 # or use appimagetool
  ./appimagetool-x86_64.AppImage annewizard-portable annewizard.AppImage
+ 

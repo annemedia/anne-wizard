@@ -10,3 +10,4 @@ sudo dnf install qt6-qtbase-devel qt6-qttools-devel qt6-qtdeclarative-devel qt6-
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y build-essential git cmake
 sudo apt install -y qt6-base-dev qt6-tools-dev qt6-declarative-dev qt6-svg-dev unzip wget curl libxkbcommon-dev patchelf
+

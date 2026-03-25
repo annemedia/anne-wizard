@@ -282,3 +282,4 @@ void Wizard::closeEvent(QCloseEvent *event) {
     event->ignore();
   }
 }
+
