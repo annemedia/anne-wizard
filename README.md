@@ -132,7 +132,7 @@ Get:
 - linuxdeployqt – [linuxdeployqt](https://github.com/probonopd/linuxdeployqt)
 or
 - appimagetool – [appimagetool](https://github.com/AppImage/appimagetool)
-both.
+, or both.
 
 
 #### macOS (DMG)
