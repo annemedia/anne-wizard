@@ -195,9 +195,12 @@ OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-## Acknowledgements
+## Acknowledgements & Attribution
 
-- Qt framework – [qt.io](https://www.qt.io)
+This application is licensed under The Unlicense License. It uses the **Qt framework** under the terms of the **GNU Lesser General Public License, version 3** (LGPLv3).
+
+- A copy of the LGPLv3 license is included in this repository as `LICENSE.LGPLv3`. For more information about Qt and its licensing, visit [https://www.qt.io/licensing/](https://www.qt.io/licensing/) and Qt framework – [qt.io](https://www.qt.io)
+  
 - linuxdeployqt – [linuxdeployqt](https://github.com/probonopd/linuxdeployqt)
 - appimagetool – [appimagetool](https://github.com/AppImage/appimagetool)
 - ANNE Official – [anne.network](https://anne.network)
