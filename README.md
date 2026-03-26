@@ -86,6 +86,23 @@ A **critical** part of your ANNE Node is its cryptographic identity: the **Seed*
 - Once synced, open your browser to `http://localhost:9116/ANNE.html` to access the main applications, eg. Web Wallet, Annex, LUKAT, or `http://localhost:9116/aon.html` to access Numiner or Swaps.
 - To mine, run ANNE Hasher to plot your drives, then start ANNE Miner.
 
+Once your ANNE Node is running, a few additional steps will help ensure reliable connectivity and smooth operation.
+
+#### Open peer-to-peer port on your router
+
+Your ANNE Node uses the peer-to-peer port 9115 (or custom) to connect with other annodes.: If behind a router, exact steps vary by router brand/model – check your router’s manual for specifics. Ensure your device has a static LAN IP to avoid issues.
+
+- Log in to your router: Open a web browser, enter your router’s IP address (e.g., http://192.168.0.1), and log in with your admin username and password (check router manual or sticker if unsure).
+- Find Port Forwarding settings: Look for a section like “Port Forwarding,” “Virtual Server,” or “Firewall” in the router’s menu.
+- Add a new rule: Choose TCP protocol, enter the port number 9115 or custom if you changed it.
+- On your computer, find the “LAN IPv4 address” for your connection
+  - on Windows, open Command Prompt and find your LAN IP address with ipconfig | findstr "192"
+  - on Linux, open Terminal and find your LAN IP address with ip -4 addr show | grep 'inet 192' | awk '{print $2}' | cut -d'/' -f1
+  - on Mac, open Terminal and find your LAN IP address with ipconfig getifaddr en0 | grep '^192'
+- On your router, specify the local IP address you found (e.g., 192.168.0.100), and Save the rule.
+- Apply changes: Click “Save” or “Apply” and wait for the router to restart if needed.
+- Test it: Use an online tool (e.g., https://yougetsignal.com/tools/open-ports to check if the port is open.
+
 ### Verifying the Download
 
 If you prefer to verify the software before running, you can inspect the source code, build it yourself, or compare the checksum of the downloaded binary against the one published in the release notes.
